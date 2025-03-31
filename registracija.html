@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+</head>
+<body>
+    <h2>Registracija</h2>
+    <form action="registracija.php" method="POST">
+        <label for="name">Vardas:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label for="email">El. paštas:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="password">Slaptažodis:</label>
+        <input type="password" name="password" required>
+        <br>
+        <label for="role">Role:</label>
+        <select name="role">
+            <option value="user">Vartotojas</option>
+            <option value="admin">Administratoriaus</option>
+        </select>
+        <br>
+        <button type="submit">Užsiregistruoti</button>
+    </form>
+</body>
+</html>
